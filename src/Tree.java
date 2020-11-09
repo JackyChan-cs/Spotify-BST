@@ -26,16 +26,14 @@ class Tree
 
             while(true){
                 root = head;
-                //add node to left child
-                if(head.getTitle().compareTo(root.getTitle()) <= 0 ){       //compares the string values and chooses the smaller one
+                if(head.getTitle().compareTo(root.getTitle()) <= 0 ){       //compares the string values and chooses the smaller one then adds to left child
                     head = head.left;
 
                     if(root ==null){
                         head.left = root;
                         return;
                     }
-                    //add node to right child
-                }else if(head.getTitle().compareTo(root.getTitle()) > 0){       //sorts the nodes alphabetically
+                }else if(head.getTitle().compareTo(root.getTitle()) > 0){       //sorts the nodes alphabetically and chooses the bigger of two and adds to right child
                     head = head.right;
 
                     if(root == null){
