@@ -29,7 +29,7 @@ public class Main {
                         values[2] = values[2].substring(1);
                     }
                     Song song = new Song(values[1].replaceAll("\"", ""), values[2].replaceAll("\"", ""), values[3]);       //removes all instances of a " in the file
-//                    playList.insert(song);                                              //adds songs to Linked List
+//                    playList.insert(song);                                              //adds songs to BST
                     Binarytree.insert(song);
                     Binarytree.display(song);
                 }
